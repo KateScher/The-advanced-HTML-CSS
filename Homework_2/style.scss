@@ -1395,6 +1395,67 @@ span {
 /*блок Moschino_whiteblock*/
 
 .moschino_whiteblock {
+  display: flex;
+  justify-content: center;
+  margin-left: 229px;
   width: 1141px;
 }
 
+.title_block {
+  display: flex;
+  padding-top: 73px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title_women {
+  display: flex;
+  justify-content: center;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #f16d7f;
+  border-bottom: 1px solid #eaeaea;;
+}
+
+.title_moschino {
+  display: flex;
+  margin-top: 17px;
+  justify-content: center;
+  font-family: 'Lato';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4d4d4d;
+}
+
+.text_moschino {
+  display: flex;
+  margin-top: 67px;
+  justify-content: center;
+  font-family: 'Lato';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #5e5e5e;
+}
+
+.material_designer {
+  display: flex;
+  padding-top: 28px;
+  justify-content: center;
+}
+
+.moschine_price {
+  display: flex;
+  justify-content: center;
+  margin-top: 37px;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ef5b70;
+  border-bottom: 1px solid #eaeaea;
+}
