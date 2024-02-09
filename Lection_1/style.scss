@@ -6,6 +6,15 @@
   padding: 0;
 }
 
+// убираем треугольник перед Category
+summary {
+  display:block;
+}
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -14,18 +23,191 @@ a {
   text-decoration: none;
 }
 
+.filter-sort {
+  height: 132px;
+  padding-top: 39px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  gap: $gapGrid;
+}
+
+// убирает треугольник перед фильтром
+.filter {
+  padding-top: 13px;
+  box-sizing: border-box;
+  width: 360px;
+  position: relative;
+  z-index: 10;
+
+  &__content {
+    background-color: #fff;
+    padding-top: 0;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  &[open] {
+    background: #ffffff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  }
+
+  &[open] .filter__heading {
+    color: $colorSelectSite;
+  }
+
+  &[open] path {
+    fill: $colorSelectSite;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-left: 16px;
+  }
+  &__heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorText;
+  }
+
+  &__item {
+    margin-top: 16px;
+  }
+
+  &__link-box {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 24px 16px;
+  }
+
+  &__link {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    &:hover {
+      color: $colorSelectSite;
+    }
+  }
+
+  &__head {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+    padding: 8px 11px 11px 11px;
+    border-bottom: 1px solid #EBEBEB;
+    border-left: 5px solid $colorSelectSite;
+  }
+
+  &__item[open] .filter__head {
+    color: $colorSelectSite;
+  }
+}
+
+.sort {
+  padding-top: 12px;
+  display: flex;
+  gap: 18px;
+
+  &__details {
+    position: relative;
+  }
+
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__check {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+  }
+
+  &__check {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+  }
+
+  &__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6f6e6e;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px 30px 11px 9px;
+    position: absolute;
+    left: -9px;
+    top: 22px;
+  }
+}
+
 .header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: $backBlock;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
   @extend %flex; //наследование
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    @extend %flex;
+  }
 }
 
-.header__left {
-  display: flex;
-  align-items: center;
-  gap: 41px;
-  @extend %flex;
+#burger {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+  // id=#
+  &:checked ~ .nav {
+    right: -$widthBurgerMenu;
+}
+}
+
+// скрыть перекрытие
+.box-content {
+  overflow: hidden;
+}
+
+.nav {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  transition: right .3s;
 }
 
 .top-head {
@@ -35,19 +217,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorSelectSite;
+  }
 }
 
 .center {
   padding-left: calc(50% - $widthSite / 2);
   padding-right: calc(50% - $widthSite / 2);
-}
-
-.top-head__heading {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: $colorSelectSite;
 }
 
 .breadcrumbs__link {
@@ -66,6 +247,7 @@ a {
 //миксин
 .product-box {
   @include centerflex();
+  gap: $gapGrid;
 }
 
 // наследование, название сами придумываем, в данном случае Flex
@@ -77,7 +259,7 @@ a {
 
 
 .product {
-  width: $thirdSite;
+  width: 360px;
   display: flex;
   flex-direction: column;
 
