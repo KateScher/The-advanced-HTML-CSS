@@ -1,0 +1,78 @@
+/*Добавление теней*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  font-size: 25px;
+	color: #FFFFFF;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+	// код из генератора обводки текста
+  // text-shadow: 
+	// 	-0   -3px 1px #40A2AD,
+	// 	 0   -3px 1px #40A2AD,
+	// 	-0    3px 1px #40A2AD,
+	// 	 0    3px 1px #40A2AD,
+	// 	-3px -0   1px #40A2AD,
+	// 	 3px -0   1px #40A2AD,
+	// 	-3px  0   1px #40A2AD,
+	// 	 3px  0   1px #40A2AD,
+	// 	-1px -3px 1px #40A2AD,
+	// 	 1px -3px 1px #40A2AD,
+	// 	-1px  3px 1px #40A2AD,
+	// 	 1px  3px 1px #40A2AD,
+	// 	-3px -1px 1px #40A2AD,
+	// 	 3px -1px 1px #40A2AD,
+	// 	-3px  1px 1px #40A2AD,
+	// 	 3px  1px 1px #40A2AD,
+	// 	-2px -3px 1px #40A2AD,
+	// 	 2px -3px 1px #40A2AD,
+	// 	-2px  3px 1px #40A2AD,
+	// 	 2px  3px 1px #40A2AD,
+	// 	-3px -2px 1px #40A2AD,
+	// 	 3px -2px 1px #40A2AD,
+	// 	-3px  2px 1px #40A2AD,
+	// 	 3px  2px 1px #40A2AD,
+	// 	-3px -3px 1px #40A2AD,
+	// 	 3px -3px 1px #40A2AD,
+	// 	-3px  3px 1px #40A2AD,
+	// 	 3px  3px 1px #40A2AD,
+	// 	-3px -3px 1px #40A2AD,
+	// 	 3px -3px 1px #40A2AD,
+	// 	-3px  3px 1px #40A2AD,
+	// 	 3px  3px 1px #40A2AD;
+  // text-shadow: 0 1px 1px #000;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  background-color: #ccc;
+  min-height: 700px;
+}
+
+.menu {
+  position: sticky;
+  width: 20%;
+  top: 20%;
+  margin-left: 10%;
+}
+
+.main {
+  margin-left: 20%;
+}
+
+.parallax {
+  min-height: 350px;
+  background-image: url(img/view-of-wavy-ocean-or-sea-water_23-2150869898.jpg);
+  background-attachment: fixed;
+}
