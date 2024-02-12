@@ -29,6 +29,12 @@ body {
   gap: 30px;
 }
 
+/*fallback для jus*/
+.container {
+  text-align: center;
+}
+
+/*fallback для jus*/
 .container {
   width: 1600px;
   margin: 0 auto;
@@ -1539,18 +1545,103 @@ svg:hover {
 
 /*Section YOU MAY LIKE ALSO
 in a Single Page*/
+/*fallback для flex-direction: column*/
+.may_like {
+  display: block;
+}
+
+/*fallback для flex-direction: column*/
+/*fallback для flex-direction: column*/
+.like__text {
+  display: block;
+}
+
+/*fallback для flex-direction: column*/
 .may_like {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 1141px;
   padding-top: 200px;
 }
 
+/*fallback для justify-conent*/
 .like_titletext {
+  display: inline-block;
+}
+
+.like_titletext {
+  display: flex;
+  padding-bottom: 72px;
+  justify-content: center;
   font-family: "Lato";
   font-size: 24px;
   line-height: 20px;
   font-weight: 900;
   text-transform: uppercase;
   color: #4d4d4d;
+}
+
+.like_fotos {
+  display: flex;
+  gap: 32px;
+}
+
+.like_image {
+  width: 261px;
+  background-image: url(./img/background_like.png);
+  background-repeat: no-repeat;
+}
+
+.like_clothes1 {
+  padding: 5px 86px 5px 82px;
+}
+
+.like_clothes2 {
+  padding: 0px 75px 5px 78px;
+  transform: translateY(-15px);
+}
+
+.like_clothes3 {
+  padding: 7px 83px 8px 92px;
+}
+
+/*fallback для flex-direction: column*/
+.like__text {
+  display: block;
+}
+
+/*fallback для flex-direction: column*/
+.like__text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  margin-left: 14px;
+  width: 235px;
+}
+
+.diff {
+  margin-top: -12px;
+}
+
+.like_subtext1 {
+  padding-bottom: 17px;
+  font-family: "Lato";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #6f6e6e;
+}
+
+.like_subtext2 {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+.like_stars {
+  float: right;
 }/*# sourceMappingURL=style.css.map */
