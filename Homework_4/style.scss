@@ -601,9 +601,8 @@ text-transform: uppercase;
 
 .menu-list {
   list-style: none;
-  padding-left: 30px;
-  padding-top: 19px;
-  padding-bottom: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .menu_lists {
@@ -1368,6 +1367,10 @@ span {
   font-weight: 300;
   text-transform: uppercase;
   color: #636363;
+}
+
+.breadcrumbs__link:hover {
+  color: #F16D7F;
 }
 
 .breadcrumbs__link_site {
@@ -2221,6 +2224,10 @@ Product Page*/
 /*Checkout page,
 checkouting block*/
 
+.redline_bott {
+  border-bottom: 3px solid #ef5b70;
+}
+
 .checkouting__item {
   border-bottom: 1px solid #e8e8e8;
 }
@@ -2232,15 +2239,14 @@ checkouting block*/
 
 .checkouting__content {
   padding-left: 230px;
-  padding-right: 229px;
+  padding-right: 131px;
   margin-top: 89px;
 }
 
 
 .checkouting__head {
   display: flex;
-  padding-top: 33px;
-  padding-bottom: 39px;
+  padding-bottom: 33px;
   font-family: 'Lato';
   font-size: 16px;
   line-height: 1.2;
@@ -2259,7 +2265,7 @@ checkouting block*/
 
 .checkouting__link {
   display: flex;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   font-family: 'Lato';
   font-size: 13px;
   line-height: 1.2;
@@ -2277,11 +2283,21 @@ checkouting block*/
   color: #b3b2b2;
 }
 
+.checkouting__link3 {
+  display: flex;
+  padding-bottom: 9px;
+  font-family: 'Lato';
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #222222;
+}
+
 .form_guest {
   display: flex;
   flex-direction: column;
-  margin-bottom: 33px;
-  padding-top: 31px;
+  margin-bottom: 16px;
+  padding-top: 23px;
 }
 
 .guest {
@@ -2308,11 +2324,11 @@ checkouting block*/
 .button_link {
   display: flex;
   border: 1px solid #eaeaea;
-  width: 180px;
+  width: 177px;
   justify-content: center;
   padding-top: 19px;
   padding-bottom: 19px;
-  margin-top: 38px;
+  margin-top: 26px;
   margin-bottom: 79px;
   font-family: 'Lato';
   font-size: 14px;
@@ -2335,6 +2351,9 @@ checkouting block*/
 
 .checkouting_mail {
   display: flex;
+  margin-top: 5px;
+  padding-top: 17px;
+  padding-bottom: 12px;
   font-family: 'Lato';
   font-size: 12px;
   line-height: 20px;
@@ -2352,6 +2371,7 @@ checkouting block*/
 
 .red__text {
   display: flex;
+  padding-top: 23px;
   font-family: 'Lato';
   font-size: 13px;
   line-height: 20px;
@@ -2361,8 +2381,19 @@ checkouting block*/
 
 .btn_login {
   display: flex;
+  gap: 32px;
 }
 
 .login_text {
   display: flex;
+  padding-top: 45px;
+}
+
+.pass_form {
+  
+}
+
+.inp_pass {
+  width: 360px;
+  padding: 21px 9px 20px 16px;
 }
