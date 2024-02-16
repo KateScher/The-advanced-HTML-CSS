@@ -2296,4 +2296,59 @@ checkouting block*/
 .inp_pass {
   width: 360px;
   padding: 21px 9px 20px 16px;
+}
+
+/*SHOPPING CART page*/
+.shopping_cart {
+  display: flex;
+  margin-top: 90px;
+}
+
+.shopping_total {
+  display: flex;
+  margin-left: 230px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.shopping_detail {
+  display: flex;
+  padding-bottom: 20px;
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+.shopping_details {
+  display: flex;
+  font-family: "Lato";
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+.title_detail {
+  margin-right: 398px;
+}
+
+.title_detail1 {
+  padding-right: 96px;
+}
+
+.title_detail2 {
+  padding-right: 79px;
+}
+
+.title_detail3 {
+  padding-right: 85px;
+}
+
+.title_detail4 {
+  padding-right: 55px;
 }/*# sourceMappingURL=style.css.map */
