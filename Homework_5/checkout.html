@@ -16,7 +16,7 @@
         </div>
   
         <div class="button_browse">
-          <label for="burger">
+          <label class="labe_btn" for="burger">
             <p>Browse</p>
             <img class="picture_triangle" src="./img/triangle_menu.png" alt="Меню-фильтр"
               />
@@ -48,9 +48,9 @@
         <div class="form_search">
           <form action="#">
             <div class="text_writing">
-              <input required type="text" placeholder="Search for Item..." />
+              <input class="searching" required type="text" placeholder="Search for Item..." />
             </div>
-            <button class="press_search">
+            <button class="press_search" type="submit">
               <img class="header_search" src="./img/search.jpg" alt="Поиск" />
             </button>
           </form>
@@ -67,7 +67,7 @@
               <div class="filter__content">
                 <details open class="filter__item">
                   <summary class="filter__head">
-                    <a href="index.html" class="index_link">
+                    <a href="single_page.html" class="index_link">
                       <div>
                       <img src="./img/foto1_basket.png" alt="buy_pozition1">
                       </div>
@@ -82,7 +82,7 @@
                     </a>
                   </summary>
                   <summary class="filter__head">
-                    <a href="index.html" class="index_link">
+                    <a href="single_page.html" class="index_link">
                       <div>
                       <img src="./img/foto2_basket.png" alt="buy_pozition2">
                       </div>
@@ -102,10 +102,10 @@
                       <p class="total">TOTAL</p>
                       <p class="total2">$500.00</p>
                     </div>
-                    <a href="#" class="filter__link">
+                    <a href="checkout.html" class="filter__link">
                       <button class="button_checkout">Checkout</button>
                     </a>
-                    <a href="#" class="filter__link">
+                    <a href="shopping_cart.html" class="filter__link">
                       <button class="button_checkout">Go to cart</button>
                     </a>
                   </div>
@@ -125,7 +125,44 @@
       <section class="product_list container">
         <nav class="nav">
           <ul class="menu">
-            <li class="menu-list"><a class="link_menu" href="index.html">HOME</a></li>
+            <li class="menu-list"><a class="link_menu" href="index.html">HOME</a>
+              <div class="mega-box">
+                <div class="menu-item">
+                  <h3 class="mega-title">WOMEN</h3>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                    <a href="#" class="mega-link">Blazers</a>
+                    <a href="#" class="mega-link">Denim</a>
+                    <a href="#" class="mega-link">Leggins/Pants</a>
+                    <a href="#" class="mega-link">Skirts/Shorts</a>
+                    <a href="#" class="mega-link">Accessories</a>
+                </div>
+                <div class="menu-item">
+                  <h3 class="mega-title">WOMEN</h3>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                    <h3 class="mega-title indention">WOMEN</h3>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                </div>
+                <div class="menu-item">
+                  <h3 class="mega-title">WOMEN</h3>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                  <div class="foto_supersale">
+                    <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                    <span class="text_supersale">Super sale!</span></a>
+                  </div>
+                </div>
+              </div>
+            </li>
             <li class="menu-list"><a class="link_menu" href="product.html">MAN</a>
               <div class="mega-box">
                 <div class="menu-item">
@@ -158,8 +195,8 @@
                     <a href="#" class="mega-link">Sweaters/Knits</a>
                     <a href="#" class="mega-link">Jackets/Coats</a>
                   <div class="foto_supersale">
-                    <img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
-                    <span class="text_supersale">Super sale!</span>
+                    <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                    <span class="text_supersale">Super sale!</span></a>
                   </div>
                 </div>
               </div>
@@ -196,8 +233,8 @@
                   <a href="#" class="mega-link">Sweaters/Knits</a>
                   <a href="#" class="mega-link">Jackets/Coats</a>
                 <div class="foto_supersale">
-                  <img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
-                  <span class="text_supersale">Super sale!</span>
+                  <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                  <span class="text_supersale">Super sale!</span></a>
                 </div>
                 </div>
               </div>
@@ -234,8 +271,8 @@
                   <a href="#" class="mega-link">Sweaters/Knits</a>
                   <a href="#" class="mega-link">Jackets/Coats</a>
                 <div class="foto_supersale">
-                  <img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
-                  <span class="text_supersale">Super sale!</span>
+                  <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                  <span class="text_supersale">Super sale!</span></a>
                 </div>
                 </div>
               </div>
@@ -244,36 +281,37 @@
               <div class="mega-box">
                 <div class="menu-item">
                   <h3 class="mega-title">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
-                  <a href="#" class="mega-link">Blazers</a>
-                  <a href="#" class="mega-link">Denim</a>
-                  <a href="#" class="mega-link">Leggins/Pants</a>
-                  <a href="#" class="mega-link">Skirts/Shorts</a>
-                  <a href="#" class="mega-link">Accessories</a>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                    <a href="#" class="mega-link">Blazers</a>
+                    <a href="#" class="mega-link">Denim</a>
+                    <a href="#" class="mega-link">Leggins/Pants</a>
+                    <a href="#" class="mega-link">Skirts/Shorts</a>
+                    <a href="#" class="mega-link">Accessories</a>
                 </div>
                 <div class="menu-item">
                   <h3 class="mega-title">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
-                  <h3 class="mega-title indention">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                    <h3 class="mega-title indention">WOMEN</h3>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
                 </div>
                 <div class="menu-item">
                   <h3 class="mega-title">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
-                <div class="foto_supersale">
-                  <img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
-                  <span class="text_supersale">Super sale!</span>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                  <div class="foto_supersale">
+                    <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                    <span class="text_supersale">Super sale!</span></a>
+                  </div>
                 </div>
               </div>
             </li>
@@ -281,37 +319,37 @@
               <div class="mega-box">
                 <div class="menu-item">
                   <h3 class="mega-title">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
-                  <a href="#" class="mega-link">Blazers</a>
-                  <a href="#" class="mega-link">Denim</a>
-                  <a href="#" class="mega-link">Leggins/Pants</a>
-                  <a href="#" class="mega-link">Skirts/Shorts</a>
-                  <a href="#" class="mega-link">Accessories</a>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                    <a href="#" class="mega-link">Blazers</a>
+                    <a href="#" class="mega-link">Denim</a>
+                    <a href="#" class="mega-link">Leggins/Pants</a>
+                    <a href="#" class="mega-link">Skirts/Shorts</a>
+                    <a href="#" class="mega-link">Accessories</a>
                 </div>
                 <div class="menu-item">
                   <h3 class="mega-title">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
-                  <h3 class="mega-title indention">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                    <h3 class="mega-title indention">WOMEN</h3>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
                 </div>
                 <div class="menu-item">
                   <h3 class="mega-title">WOMEN</h3>
-                  <a href="#" class="mega-link">Dresses</a>
-                  <a href="#" class="mega-link">Tops</a>
-                  <a href="#" class="mega-link">Sweaters/Knits</a>
-                  <a href="#" class="mega-link">Jackets/Coats</a>
-                <div class="foto_supersale">
-                  <img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
-                  <span class="text_supersale">Super sale!</span>
-                </div>
+                    <a href="#" class="mega-link">Dresses</a>
+                    <a href="#" class="mega-link">Tops</a>
+                    <a href="#" class="mega-link">Sweaters/Knits</a>
+                    <a href="#" class="mega-link">Jackets/Coats</a>
+                  <div class="foto_supersale">
+                    <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                    <span class="text_supersale">Super sale!</span></a>
+                  </div>
                 </div>
               </div>
             </li>
@@ -347,8 +385,9 @@
                   <a href="#" class="mega-link">Sweaters/Knits</a>
                   <a href="#" class="mega-link">Jackets/Coats</a>
                 <div class="foto_supersale">
-                  <img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
-                  <span class="text_supersale">Super sale!</span>
+                  <a href="#"><img src="./img/foto_for_MegaMenu.png" alt="foto_SUPER SALE">
+                  <span class="text_supersale">Super sale!</span></a>
+                </div>
                 </div>
             </div>
             </li>
@@ -484,7 +523,7 @@
             </div>
             <div class="footer__subsc__form__btn">
               <form action="#">
-                <input required type="email" placeholder="Enter Your Email" />
+                <input class="subs_input" required type="email" placeholder="Enter Your Email" />
                 <button type="submit">Subscribe</button>
               </form>
             </div>
@@ -498,7 +537,7 @@
             <a href="index.html"
               ><img class="about_logo" src="./img/logo.png" alt="Логотип"
             /></a>
-            <h4 class="about_brand">BRAN<span>D</span></h4>
+            <a href="index.html"><h4 class="about_brand">BRAN<span>D</span></h4></a>
           </div>
           <p class="about__about">
             Objectively transition extensive data rather than cross functional
@@ -511,7 +550,7 @@
             optimize.
           </p>
         </div>
-        <div class="about__items">
+        <nav class="about__items">
           <div class="about__item">
             <h3 class="about__title">COMPANY</h3>
             <p class="about__text">
@@ -548,7 +587,7 @@
               </ul>
             </p>
           </div>
-        </div>
+        </nav>
       </section>
 
       <footer class="footer container">
