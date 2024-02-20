@@ -386,16 +386,19 @@
 
         <div class="shopping_fotos">
           <div class="shopping_foto1">
-            <img src="img/foto1_shopping_cart.png" alt="foto1">
+            <a href="single_page.html"><img src="img/foto1_shopping_cart.png" alt="foto1"></a>
           </div>
           <div class="foto_details">
-            <p class="shopping_text">Mango People T-shirt<img src="img/stars_for_shopcart.png" alt="stars"></p>
-            <p class="subtext1">Color: <span class="lightgrey_text"> Red</span></p>
-            <p class="subtext2">Size: <span class="lightgrey_text"> XII</span></p>
+            <a href="single_page.html">
+              <p class="shopping_text">Mango People T-shirt<img src="img/stars_for_shopcart.png" alt="stars"></p>
+              <p class="subtext1">Color: <span class="lightgrey_text"> Red</span></p>
+              <p class="subtext2">Size: <span class="lightgrey_text"> XII</span></p>
+            </a>
           </div>
           <div class="shopping_data">
             <p class="data_details1">$150</p>
-            <p class="data_details2"><span class="data_span">2</span></p>
+            <input class="data_details2" value="2" type="number" min="1" max="99">
+            <!-- <p class="data_details2"><span class="data_span">2</span></p> -->
             <p class="data_details3">FREE</p>
             <p class="data_details4">$300</p>
             <img width="15" height="15" class="shopping_cross" src="img/cross_in_cicle_to_shop_cart.png" alt="cross in cicle">
@@ -405,16 +408,19 @@
 
         <div class="shopping_fotos">
           <div class="shopping_foto1">
-            <img src="img/foto2_shopping_cart.png" alt="foto1">
+            <a href="single_page.html"><img src="img/foto2_shopping_cart.png" alt="foto1"></a>
           </div>
           <div class="foto_details">
-            <p class="shopping_text">Mango People T-shirt<img src="img/stars_for_shopcart.png" alt="stars"></p>
-            <p class="subtext1">Color: <span class="lightgrey_text"> Red</span></p>
-            <p class="subtext2">Size: <span class="lightgrey_text"> XII</span></p>
+            <a href="single_page.html">
+              <p class="shopping_text">Mango People T-shirt<img src="img/stars_for_shopcart.png" alt="stars"></p>
+              <p class="subtext1">Color: <span class="lightgrey_text"> Red</span></p>
+              <p class="subtext2">Size: <span class="lightgrey_text"> XII</span></p>
+            </a>
           </div>
           <div class="shopping_data">
             <p class="data_details1">$150</p>
-            <p class="data_details2"><span class="data_span">2</span></p>
+            <input class="data_details2" value="2" type="number" min="1" max="99">
+            <!-- <p class="data_details2"><span class="data_span">2</span></p> -->
             <p class="data_details3">FREE</p>
             <p class="data_details4">$300</p>
             <img width="15" height="15" class="shopping_cross" src="img/cross_in_cicle_to_shop_cart.png" alt="cross in cicle">
@@ -424,16 +430,19 @@
 
         <div class="shopping_fotos">
           <div class="shopping_foto1">
-            <img src="img/foto3_shopping_cart.png" alt="foto1">
+            <a href="single_page.html"><img src="img/foto3_shopping_cart.png" alt="foto1"></a>
           </div>
           <div class="foto_details">
-            <p class="shopping_text">Mango People T-shirt<img src="img/stars_for_shopcart.png" alt="stars"></p>
-            <p class="subtext1">Color: <span class="lightgrey_text"> Red</span></p>
-            <p class="subtext2">Size: <span class="lightgrey_text"> XII</span></p>
+            <a href="single_page.html">
+              <p class="shopping_text">Mango People T-shirt<img src="img/stars_for_shopcart.png" alt="stars"></p>
+              <p class="subtext1">Color: <span class="lightgrey_text"> Red</span></p>
+              <p class="subtext2">Size: <span class="lightgrey_text"> XII</span></p>
+            </a>
           </div>
           <div class="shopping_data">
             <p class="data_details1">$150</p>
-            <p class="data_details2"><span class="data_span">2</span></p>
+            <input class="data_details2" value="2" type="number" min="1" max="99">
+            <!-- <p class="data_details2"><span class="data_span">2</span></p> -->
             <p class="data_details3">FREE</p>
             <p class="data_details4">$300</p>
             <img width="15" height="15" class="shopping_cross" src="img/cross_in_cicle_to_shop_cart.png" alt="cross in cicle">
@@ -442,12 +451,43 @@
         </div>
         
         <div class="shopping_btns">
-          <form>
-            <input type="reset" value="CLEAR SHOPPING CART">
+          <form class="shop_reset">
+            <input class="shop_input" type="reset" value="CLEAR SHOPPING CART">
           </form>
           <a href="#" class="shopping_btn">
             <button class="shop_btn"><p>CONTINUE SHOPPING</p></button>
           </a>
+        </div>
+
+        <div class="discount_info">
+          <div class="discount_shipping">
+            <p class="discount_shipping-title">Shipping Adress</p>
+            <form action="#" class="discount_shipping-form">
+              <select class="discount_shipping_form-country" name="country">
+                <option class="discount_shipping-country" value="Bangladesh">Bangladesh</option>
+                <option class="discount_shipping-country" value="Russian Federation">Russian
+                  Federation</option>
+                <option class="discount_shipping-country" value="Chile">Chile</option>
+                <option class="discount_shipping-country" value="Egypt">Egypt</option>
+              </select>
+              <input type="text" class="discount_shipping_form-state" placeholder="State">
+              <input type="text" class="discount_shipping-zip" placeholder="Postcode / Zip">
+              <button type="submit" class="discount_get-quote">get a quote</button>
+            </form>
+          </div>
+          <div class="discount_cupon">
+            <p class="discount_cupon-title">coupon discount</p>
+					  <p class="discount_cupon-text">Enter your coupon code if you have one</p>
+            <form action="#" class="discount_cupon-form">
+              <input type="text" class="discount_cupon-form-text" placeholder="State">
+              <button type="submit" class="discount_cupon-btn">Apply coupon</button>
+            </form>
+          </div>
+          <div class="discount_grandtotal">
+            <p class="discount__total-suptitle">Sub   total <span>   $900</span></p>
+            <p class="discount__total-title">GRAND TOTAL  <span> $900</span> </p>
+            <a href="#" class="discount__total-btn">proceed to checkout</a>
+          </div>
         </div>
 
       </section>
