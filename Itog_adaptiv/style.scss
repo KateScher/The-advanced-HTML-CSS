@@ -23,26 +23,32 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header_menu {
+  display: flex;
+  box-sizing: border-box;
+  gap: 32px;
 }
 
 .nav_left {
   display: flex;
   box-sizing: border-box;
-  padding-left: 374px;
 }
 
-.nav_lists {
-  display: flex;
-  list-style: none;
-}
+// .nav_lists {
+//   display: flex;
+//   list-style: none;
+// }
 
 .nav_list {
-  padding-right: 40px;
+  // padding-right: 40px;
 }
 
 .nav_left-link {
   display: flex;
-  width: 100px;
+  max-width: 118px;
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 11px;
   line-height: 19px;
@@ -53,15 +59,31 @@ body {
 
 .nav_right {
   display: flex;
-  gap: 40px;
+  
 }
 
 .sort_money {
+  display: flex;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7e7e7e;
   border: none;
+  background-color: #f6f6f6;
 }
 
 .sort_lang {
+  display: flex;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7e7e7e;
   border: none;
+  background-color: #f6f6f6;
 }
 
 /*LOGO section*/
@@ -69,10 +91,12 @@ body {
   display: flex;
   padding-left: 375px;
   gap: 313px;
+  box-sizing: border-box;
 }
 
 .logo_left {
   display: flex;
+  box-sizing: border-box;
   gap: 12px;
   padding-top: 51px;
   padding-bottom: 19px;
@@ -105,7 +129,7 @@ body {
   display: flex;
   padding-left: 11px;
   padding-right: 8px;
-  width: 260px;
+  max-width: 260px;
   height: 32px;
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
@@ -137,11 +161,15 @@ body {
 
 .banner {
   display: flex;
+  max-width: 1920px;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #cccccc;
 }
 
 .banner_center {
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     margin-left: 30px;
     background-color: #cccccc;
@@ -384,7 +412,7 @@ body {
 
 .excluz_title2 {
   display: flex;
-  width: 248px;
+  max-width: 248px;
   margin-left: 9px;
   margin-right: 10px;
   font-family: 'Merriweather Sans', sans-serif;
@@ -656,9 +684,94 @@ body {
   color: #ffffff;
 }
 
-// @media (min-width: 320px) and (max-width:  1174px) {
-//   .header {
-//     flex-direction: column;
-//   }
+@media (min-width: 724px) and (max-width: 940px) {
+  .logo {
+    padding-left: 1vw;
+    gap: 135px;
+  }
 
-// }
+  .logo_title {
+    font-size: 44px;
+  }
+
+  .banner_title1 {
+    font-size: 25px;
+  }
+
+  .banner_title2 {
+    font-size: 85px;
+  }
+
+  .banner_title3 {
+    font-size: 30px;
+  }
+
+  .excluz_title {
+    font-size: 34px;
+}
+
+.excluz_title3 {
+  font-size: 32px;
+}
+
+.excluz_title2 {
+  font-size: 20px;
+}
+
+.excluz_title5 {
+  font-size: 25px;
+}
+
+.excluz_title6 {
+  font-size: 28px;
+}
+
+.excluz_lookbook {
+  font-size: 30px;
+}
+
+.excluze_discont4 {
+  font-size: 27px;
+}
+
+.excluz_texts3 {
+  font-size: 18px;
+}
+
+.slider1 {
+  margin-right: 426px;
+}
+
+.banner_title {
+  margin-right: 33px;
+}
+
+.banner_title {
+  margin-top: 117px;
+
+}
+
+.banner_rounded {
+  padding-top: 78px;
+}
+
+.exclusive_sector {
+  padding: 1vw;
+  gap: 20px;
+}
+
+.header_menu {
+  margin-left: 19px;
+}
+
+}
+
+@media (min-width: 280px) and (max-width: 724px) {
+  .exclusive_sector {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 2vw;
+  }
+
+}
